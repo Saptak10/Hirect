@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { useState } from "react";
+// import { useState } from "react";
 import './App.css';
 import Form from './components/Form'
 import Chart from './components/Chart';
@@ -8,7 +8,7 @@ import ExchangRate from "./components/ExchangeRate";
 
 function App() {
 
-  const [userData, setUserData] = useState({
+  const userData = {
     labels: UserData.map((data) => data.year),
     datasets: [
       {
@@ -25,7 +25,7 @@ function App() {
         borderWidth: 2,
       },
     ],
-  });
+  };
 
   return (
     <div className="App">
